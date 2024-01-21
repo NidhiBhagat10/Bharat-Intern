@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 25%;
+    height: auto;
+    background-image: url(weather.png);
+    background-size: cover;
+    padding: 6vmin 25px;
+    border: 6px solid #ffffff;
+    box-shadow: inset 0 0 5px #ffffff, 0 0 25px #00000033;
+    border-radius: 15px;
+}
+
+.inputs{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs input[type="text"] {
+    height: 90%;
+    width: 90%;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: none;
+    border-top: 2px solid #ffffff51 ;
+    border-bottom: 2px solid #000;
+    border-radius: 10%;
+    background-color: #ffffff0f;
+    color: #fff;
+}
+
+.inputs input[type="submit"] {
+    height: 5.1vmin;
+    width: 12vmin;
+    color: white;
+    font-size: .9rem;
+    border: none;
+    border-top: 2px solid #ffffff51 ;
+    border-bottom: 2px solid #000;
+    border-radius: 50px;
+    background: none;
+}
+
+.inputs input[type="submit"]:active{
+    transform: scale(.9);
+}
+
+.display{
+    width: 100%;
+}
+
+.wrapper{
+    backdrop-filter: blur(2px);
+    margin: 2vmin 0;
+    border-radius: 6px;
+}
+
+.wrapper h2{
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+}
+
+.wrapper p{
+    margin: 20px 50px;
+    margin-right: 20px;
+    text-align: left;
+    color: #04214c;
+    font-size: 23px;
+}
+
+.wrapper h2 span{
+    font-size: 26px;
+    color: #9beefb
+}
+
+.wrapper p span{
+    color: #5e0df4;
+    font-weight: 700;
+    font-size: 25px;
+}
+
