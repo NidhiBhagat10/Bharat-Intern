@@ -9,18 +9,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f2f2f2;
+    background-color: #f2f2f293;
 }
 
 .container {
-    width: 25%;
+    width: 70vmin;
     height: auto;
-    background-image: url(weather.png);
-    background-size: cover;
     padding: 6vmin 25px;
     border: 6px solid #ffffff;
     box-shadow: inset 0 0 5px #ffffff, 0 0 25px #00000033;
     border-radius: 15px;
+    background-image: url(weather.png);
 }
 
 .inputs{
@@ -41,24 +40,24 @@ body {
 }
 
 .inputs input[type="text"] {
-    height: 90%;
-    width: 90%;
+    height: 8vmin;
+    width: 55vmax;
     font-weight: bold;
     font-size: 1rem;
     padding: 10px;
     margin-right: 12px;
-    background-color: transparent;
     border: none;
     border-top: 2px solid #ffffff51 ;
     border-bottom: 2px solid #000;
     border-radius: 10%;
-    background-color: #ffffff0f;
-    color: #fff;
+    background-image: url(weather.png);
+    background-position-y: 56px;
+    background-size: 750px;
 }
 
 .inputs input[type="submit"] {
-    height: 5.1vmin;
-    width: 12vmin;
+    height: 8vmin;
+    width: 40vmin;
     color: white;
     font-size: .9rem;
     border: none;
@@ -66,6 +65,9 @@ body {
     border-bottom: 2px solid #000;
     border-radius: 50px;
     background: none;
+    background-image: url(weather.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .inputs input[type="submit"]:active{
@@ -74,10 +76,10 @@ body {
 
 .display{
     width: 100%;
+    margin: 0 auto;
 }
 
 .wrapper{
-    backdrop-filter: blur(2px);
     margin: 2vmin 0;
     border-radius: 6px;
 }
@@ -106,5 +108,6 @@ body {
     color: #5e0df4;
     font-weight: 700;
     font-size: 25px;
+    text-shadow: 1px 1px #000;
 }
 
